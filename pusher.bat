@@ -1,4 +1,7 @@
 @echo off
+
+git pull
+
 echo Enter commit message:
 set /p commit=
 
