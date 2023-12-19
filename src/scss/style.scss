@@ -8,14 +8,21 @@
 }
 body{
     width: 1440px;
-    height: 4836px;
-    background: black;
+    background: #FFF;
     margin: 0 auto;
     
+}
+html{
+    background: black;
 }
 @import "./header";
 @import "./footer";
 @import "./index";
+@import "./programs";
+@import "./about-us";
+@import "./gallery";
+@import "./form";
+@import "./contact-us";
 @font-face {
     font-family: 'PlusJakartaSans';
     src: url('../assets/fonts/PlusJakartaSans-Medium.ttf') format('woff2'),

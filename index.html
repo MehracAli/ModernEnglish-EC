@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <main>
+    
         <header id="header">
             <div id="logo-nav">
                 <div id="logo">
@@ -80,8 +81,157 @@
             </div>
         </header>
         <section id="banner">
+
+            <p id="education-promo">Get Best Quality<br> Education More Easier</p>
+            <p id="education-promo-2">We provide you with unrestricted access to the greatest courses
+             from the<br> top specialists, allowing you to learn countless of 
+             practical lessons in a range<br> of topics.
+            </p>
+            <div id="overlay-image"></div>
+
+            <div id="search-container">       
+                <input type="search" placeholder="Search courses">
+                <div>
+                <a>Courses</a>
+                <i class="fa-sharp fa-thin fa-circle-chevron-down"></i>
+                </div>
+                <div id="circle">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <p id="education-promo-3">Popular : IELTS, SAT, English for Kids</p>
+       
+
             
         </section>
+        <section>
+
+            <div id="cards">
+        
+                <div class="title-container">              
+                    <h1>Popular Courses</h1>
+                    <div class="content"> </div> 
+                    <div class="category-container" >
+                        <div class="category-1">English Programs</div>
+                        <div class="category-2">Kids Programs</div>
+                        <div class="category-2">Languages</div>
+                        <div class="category-2">Online Courses</div>
+                    </div>   
+                </div>
+                <div style="display: flex; justify-content: space-between;">
+                    <div id="card">
+                        <div><img class="image-2" src="src/assets/images/course-pics1.png"></div>
+                        <div class="information-card">
+                            <p class="course-name">English programs</p>
+                            <p class="course-information">
+                             General and intensive English courses focus on the core skills of speaking,
+                             listening, reading and writing to improve confidence and increase fluency
+                            </p>
+
+                        </div>
+                    </div>
+                    <div id="card">
+                        <div><img src="src/assets/images/2c6f6606fedd3d232df8b698b3758545.jpg"></div>
+                        <div class="information-card">
+                            <p class="course-name">IELTS</p>
+                            <p class="course-information">
+                                Our teachers are trained and experienced in getting you 
+                                to approach the exams strategically. They will teach you how
+                                to take the exam using a solid methodology that will bring you closer
+                                to your goals.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div id="card">
+                        <div><img src="src/assets/images/course-pics4.png"></div>
+                        <div class="information-card">
+                            <p class="course-name">English for Kids</p>
+                            <p class="course-information">
+                                Our English Program for Kids filled with fun activities, games, 
+                                songs and worksheets that can help them with their English.
+                                We aim to provide the best resources to make their lesson preparation
+                                a breeze.
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>    
+            </div>
+            <button class="more-courses">More Courses</button>
+        </section>
+        <section id="graduates-section">
+
+            <div id="graduates-1">
+                <img  src="src/assets/images/graduates1.jpg">
+            </div>
+            <div id="graduates-2">
+                <img src="src/assets/images/graduates2.jpg">
+            </div>
+            <div id="graduates-3">
+                <img  src="src/assets/images/graduates3.jpg">
+            </div>
+            <div id="graduates-4">
+                <img  src="src/assets/images/graduates4.jpg">
+            </div>
+            <div class="graduates-info">
+                <p class="p-1">Meet Our Graduates</p>
+                <p class="p-2">Meet our recently graduated students.</p>
+                 <button class="more-graduates">More Graduates</button>
+           </div>
+        
+
+        </section>
+        <section id="course-selection-section">
+           <p id="course-selection-message">Not sure which course is right for you?</p>
+           <p id="course-selection-message-2">We offer a wide range of courses to help you meet your goals. 
+            Let us help you find your perfect English<br> language course.
+           </p>
+           <button id="contact-us-button-2">Contact Us</button>
+           
+        </section>
+        <section id="students-opinion-section">
+            <p id="what-our-student-say">What Our Students Say<br> About Us</p>
+            <div class="student-opinion">
+
+                <div class="student-profile">
+                    <div class="profile-picture"><img src="src/assets/images/profile-picture.jpg"></div>
+                    <div class="student-info">
+                        <p class="student-name">Samir Aliyev</p>
+
+                        <div class="student-occupation">
+                           
+                            <p class="student-opinions">Site Reliability Engineer</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                <path d="M13.5 18H5C4.73478 18 4.48043 17.8946 4.29289 17.7071C4.10536 17.5196 4 17.2652 4 17V9C4 8.73478 4.10536 8.48043 4.29289 8.29289C4.48043 8.10536 4.73478 8 5 8H12.5C12.7652 8 13.0196 8.10536 13.2071 8.29289C13.3946 8.48043 13.5 8.73478 13.5 9V20C13.5 21.3261 12.9732 22.5979 12.0355 23.5355C11.0979 24.4732 9.82608 25 8.5 25" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M28 18H19.5C19.2348 18 18.9804 17.8946 18.7929 17.7071C18.6054 17.5196 18.5 17.2652 18.5 17V9C18.5 8.73478 18.6054 8.48043 18.7929 8.29289C18.9804 8.10536 19.2348 8 19.5 8H27C27.2652 8 27.5196 8.10536 27.7071 8.29289C27.8946 8.48043 28 8.73478 28 9V20C28 21.3261 27.4732 22.5979 26.5355 23.5355C25.5979 24.4732 24.3261 25 23 25" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="student-opinions">
+                    I have always relied on EdTech to help me understand my studies. I can<br>
+                    always count on him to get me through difficult subjects. with edtech<br>
+                    my learning is easier without any obstacles.
+                </div>
+            </div>
+
+        </section>
+      
+        <section id="join-us-section">
+           <div class="join-us-content">
+            <p class="career-opp">Career Opportunities</p>
+            <p class="join-us-content-1">Come and join us</p>
+            <p class="join-us-content-2">Become an instructor and change lives - including your own.</p>
+            <button class="join-us-button">Join Us</button>
+           </div>
+          <div><img class="join-us-picture"  src="src/assets/images/join-us.png"></div>
+
+        </section>
+      
+
         <footer>
             <div id="footer-top">
                 <div id="sm">
@@ -170,6 +320,6 @@
                 </div>
             </div>
         </footer>
-    </main>
+
 </body>
 </html>
