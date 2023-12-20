@@ -1,5 +1,7 @@
 #banner{
-    background-image: url(../assets/images/unsplash_k33qWPtEfrM.png);
+    background:  url(../assets/images/unsplash_k33qWPtEfrM.png) center/cover   no-repeat;
+
+   
     background-size: cover;
     height: 628px; 
     width: 1440px;
@@ -7,6 +9,7 @@
     padding-left: 126px;
     padding-top: 96px;
     padding-right: 551px;
+
 
 
 
@@ -69,6 +72,9 @@
         gap: 48px;
         justify-content: space-between;
         margin-top: 64px;
+        a {
+            margin-right: 8px;
+        }
 
         input {
             width: 428px;
@@ -172,27 +178,29 @@
         width: 376px;
         height: 426px;
        
-        border-radius: 16px 16px 0 0;
+        border-radius: 16px;
         border-right: 1px solid  #E0E0E0;
         border-bottom: 1px solid #E0E0E0;
         border-left: 1px solid  #E0E0E0;
         border-top-style: none;
        
-        border: 1px solid #f7f7f7;
-        box-shadow: 0 8px 16px #bbb;
+        border: 1px solid #e0dfdf;
+        box-shadow: 0 8px 16px #f0eded;
 
 
         
         img {
             width: 376px;
             height: 212px;
-            border-radius: 16px 16px 0 0;
+            border-radius: 0 0 -16px -16px;
+
 
         }
         .image-2 {
             width: 376px;
             height: 212px;
-            border-radius: 0 0 -16px -16px;
+            object-fit: cover;
+            border-radius: 16px 16px 0 0;
 
         }
        
@@ -201,6 +209,8 @@
             padding: 24px 20px;
            
             box-sizing: border-box;
+            
+
 
          
             .course-name {
@@ -348,13 +358,15 @@
             box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
             object-fit: cover;
 
+
         }
        
 
     }
     .graduates-info {
-        margin-left: 126px;
-        margin-top: 100px;
+        position: relative;
+        left: 126px;
+        top: 100px;
         
         
     
@@ -400,15 +412,59 @@
     
         }
     }
-    
-    
+    .ellipse-1 {
+        position: absolute;
+        margin: 103px 619px 451px 625px;
+    }
+    .ellipse-2 {
+        position: absolute;
+        margin: 26px 191px 1151px 626px;
+    }
+    .ellipse-3 {
+        position: absolute;
+       margin: 367px 1233px 272px 96px; 
+    }
+    .ellipse-4 {
+        position: absolute;
+        margin: 580px 1261px 26px 17px;
+    }
+    .ellipse-5 {
+        position: absolute;
+        margin: 432px 884px 70px 308px;
+    }
+    .ellipse-6 {
+        position: absolute;
+        margin: 580px 426px 21px 865px;
+    }
+    .ellipse-7 {
+        position: absolute;
+        margin: 360px 471px 321px 900px;
+
+    }
+    .ellipse-8 {
+        position: absolute;
+        margin: 349px 94px 290px 1235px; 
+    }
+    .ellipse-9 {
+        position: absolute;
+        margin: 580px 39px 40px 1271px;
+    }
+    .ellipse-10 {
+        position: absolute;
+        margin: 286px 306px 407px 1077px;
+    }
+    .ellipse-11 {
+        position: absolute;
+        margin: 243px 943px 438px 428px;
+
+    }
 }
 
 
 
 #course-selection-section {
     width: 1140px;
-    height: 750px;
+    height: 560px;
     padding-top: 160px;
     #course-selection-message {
         color: #000;
@@ -461,7 +517,8 @@
        
 }
 #students-opinion-section {
-    height: 578px;
+
+    height: 778px;
     background: #D70202;
     #what-our-student-say {
         color: #FFF;
@@ -483,6 +540,7 @@
             display: flex;
             flex-direction: row;
             gap: 8px;
+            
            
             .profile-picture {
 
@@ -492,9 +550,16 @@
                     border-radius: 50%;
                     width: 48px;
                     height: 48px;
+                   
                 }
             }
             .student-info {
+                display: flex;
+                flex-direction: row;
+                gap: 285px;
+                
+                
+                
                 .student-name {
                     color: var #252525;
                     font-size: 16px;
@@ -503,9 +568,11 @@
                     line-height: 150%;
                 }
                 .student-occupation {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
+                    color: #7C7C7C;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 155%; 
                 }
             }
            
@@ -518,6 +585,7 @@
             font-style: normal;
             font-weight: 400;
             line-height: 155%;
+            margin-top: 16px;
         }
 
     }
@@ -526,7 +594,7 @@
 #join-us-section {
 
    
-    height: 1188px;
+    height: 664px;
     display: flex;
 
     .join-us-picture {
