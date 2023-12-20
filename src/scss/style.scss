@@ -9,13 +9,14 @@
 body{
     width: 1440px;
     background: #FFF;
-    margin: 0 auto;
+    margin: 0 auto!important;
     
 }
 html{
     background: black;
 }
 @import "./header";
+@import "./mini-header";
 @import "./footer";
 @import "./index";
 @import "./programs";
