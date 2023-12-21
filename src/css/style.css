@@ -269,6 +269,7 @@ footer #footer-bottom .footer-bar ul li {
 }
 #banner {
   background: url(../assets/images/unsplash_k33qWPtEfrM.png) center/cover no-repeat;
+  background-position: unset;
   background-size: cover;
   height: 628px;
   width: 1440px;
@@ -501,16 +502,25 @@ footer #footer-bottom .footer-bar ul li {
   padding: 103px 57px 166px 58px;
   margin: 203px 538px 0 436px;
 }
-#graduates-section #graduates-3 img {
+#graduates-section #graduates-3 .graduates3-container {
+  z-index: 1;
+  position: relative;
   border-radius: 100%;
   width: 351px;
   height: 351px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 222px;
+  overflow: hidden;
   border: 3px solid #FFF;
   background: #FFF;
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
+}
+#graduates-section #graduates-3 .graduates3-container img {
+  position: absolute;
+  top: -97px;
+  left: -45px;
+  width: 130%;
 }
 #graduates-section #graduates-4 {
   width: 621px;
@@ -519,16 +529,25 @@ footer #footer-bottom .footer-bar ul li {
   padding: 13px 170px 97px 147px;
   margin: 349px 48px 13px 771px;
 }
-#graduates-section #graduates-4 img {
+#graduates-section #graduates-4 .graduates4-container {
+  z-index: 1;
+  position: relative;
   border-radius: 100%;
   width: 304px;
   height: 304px;
-  border-radius: 214px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 222px;
+  overflow: hidden;
   border: 3px solid #FFF;
   background: #FFF;
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
-  -o-object-fit: cover;
-     object-fit: cover;
+}
+#graduates-section #graduates-4 .graduates4-container img {
+  position: absolute;
+  top: -20px;
+  left: -140px;
+  width: 200%;
 }
 #graduates-section .graduates-info {
   position: relative;
