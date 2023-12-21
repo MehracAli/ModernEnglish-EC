@@ -1,15 +1,138 @@
-#index-main{
-    width: 100%;
-    #banner{
-        background:  url(../assets/images/unsplash_k33qWPtEfrM.png);
-        background-size: cover;
-        background-position: center;
-        height: 628px; 
-        width: 1440px;
-        position: relative;
+#banner{
+    background:  url(../assets/images/unsplash_k33qWPtEfrM.png) center/cover   no-repeat;
+    background-position: unset;
+   
+    background-size: cover;
+    height: 628px; 
+    width: 1440px;
+    position: relative;
+    
+    .overlay{
         padding-left: 126px;
         padding-top: 96px;
         padding-right: 551px;
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(102, 102, 102, 0.50);
+        #overlay-image {
+            background-image: url(../assets/images/girl-with-notebooks.png);
+            width: 978px;
+            height: 598px;
+    
+            position: absolute;
+            top: 30px;
+            bottom: 0;
+           
+            left: 411px;
+            right: 51px;
+            background-size: cover;
+            
+    
+    
+          
+    
+    
+        }
+        #education-promo {
+            z-index: 1;
+            font-size: 68px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 116%;
+            width: 763px;
+            color: white;
+            
+        }
+        #education-promo-2 {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+            color: #E0E0E0;
+            margin-top: 24px;
+           
+    
+        }
+        #education-promo-3 {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; 
+            color: #E0E0E0;
+            margin-top: 8px;
+           
+    
+        }
+        #search-container {
+            display: flex;
+            width: 716px;
+            height: 68px;
+            padding: 8px 8px 8px 24px;
+            align-items: center;
+            border-radius: 100px;
+            background-color: #FFF;
+            gap: 48px;
+            justify-content: space-between;
+            margin-top: 64px;
+            a {
+                margin-right: 8px;
+            }
+    
+            input {
+                width: 428px;
+                height: 24px;
+                border-style: none;
+            }
+            #circle {
+                width: 52px;
+                height: 52px;
+                background-color: #D70101;
+                border-radius: 50%;
+                padding-left: 17px;
+                padding-right: 14px;
+                padding-top: 15px;
+                padding-bottom: 13px;
+    
+    
+            
+                .fa-magnifying-glass {
+                    
+                    width: 30px;
+                    height: 30px;
+                    color: white;
+                   
+                  
+    
+    
+                }
+            }
+    
+        }
+    }
+
+
+
+}
+
+
+#cards {
+    margin-top: 100px;
+    margin-left: 126px;
+    margin-right: 126px;
+  
+    .title-container {
+        width: 1188px;
+        height: 144px;
+        margin-bottom: 40px;
+      
+      
+       
+        
+      
     
         #overlay-image {
             background-image: url(../assets/images/girl-with-notebooks.png);
@@ -47,8 +170,170 @@
                 line-height: 116%; /* 27.84px */
             }
         }
-        #education-promo-2 {
-            font-size: 20px;
+       
+
+    }
+    
+}
+.more-courses {
+    border-radius: 32px;
+    border: 1px solid #D70101;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    width: 185px;
+    height: 52px;
+    color:#D70101;
+    background-color: transparent;
+    padding-left: 24px;
+    padding-right: 24px; 
+    margin: 54px 631px 91px 631px;
+
+
+}
+
+#graduates-section {
+    background: #F7F7F7;
+    width: 1440px;
+    height: 750px;
+    position: relative;
+   
+   
+    #graduates-1 {
+        width: 479px;
+        height: 319px;
+        padding: 9px 103px 62px 128px;
+        margin: 76px 282px 355px 679px;
+        position: absolute;
+       
+        
+
+        
+       
+        img {
+           
+            width: 248px;
+            height: 248px;
+            border-radius: 203px;
+            border: 3px solid #FFF;
+
+            background: #FFF;
+           
+            object-fit: cover;
+          
+
+            box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.25);
+        }
+
+        
+
+    }
+    #graduates-2 {
+        width: 347px;
+        height: 463px;
+        position: absolute;
+        padding: 113px 65px 153px 85px;
+        margin: 23px 61px 264px 1032px;
+        
+        img {
+            border-radius: 100%;
+            width: 197px;
+            height: 197px;
+            border-radius: 194px;
+            border: 3px solid #FFF;
+
+            background: #FFF;
+
+            box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
+            object-fit: cover;
+          
+            
+        }
+       
+
+    }
+    #graduates-3 {
+        width: 466px;
+        height: 622px;
+        position: absolute;
+        padding: 103px 57px 166px 58px;
+        margin: 203px 538px 0 436px;
+        .graduates3-container{
+            z-index: 1;
+            position: relative;
+            border-radius: 100%;
+            width: 351px;
+            height: 351px;
+            object-fit: cover;
+            border-radius: 222px;
+            overflow: hidden;          
+            border: 3px solid #FFF;
+
+            background: #FFF;
+
+            box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
+            img {
+                position: absolute;
+                top: -97px;
+                left: -45px;
+                width: 130%;
+            }
+        }
+       
+
+    }
+    #graduates-4 {
+        width: 621px;
+        height: 414px;
+        position: absolute;
+        padding: 13px 170px 97px 147px;
+        margin: 349px 48px 13px 771px;
+        .graduates4-container{
+            z-index: 1;
+            position: relative;
+            border-radius: 100%;
+            width: 304px;
+            height: 304px;
+            object-fit: cover;
+            border-radius: 222px;
+            overflow: hidden;          
+            border: 3px solid #FFF;
+
+            background: #FFF;
+
+            box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
+            img {
+                position: absolute;
+                top: -20px;
+                left: -140px;
+                width: 200%;
+            }
+        }
+       
+
+    }
+    .graduates-info {
+        position: relative;
+        left: 126px;
+        top: 100px;
+        
+        
+    
+    
+        .p-1 {
+            font-size: 52px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 110%;
+            color: #D70101;
+            
+    
+            
+        
+        }
+        .p-2 {
+            font-size: 18px;
             font-style: normal;
             font-weight: 400;
             line-height: 130%;

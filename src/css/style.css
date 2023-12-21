@@ -273,21 +273,27 @@ footer #footer-bottom .footer-bar ul li {
   font-family: "PlusJakartaSans";
   src: url("../assets/fonts/PlusJakartaSans-Medium.ttf") format("woff2");
 }
-#index-main {
-  width: 100%;
-}
-#index-main #banner {
-  background: url(../assets/images/unsplash_k33qWPtEfrM.png);
+#banner {
+  background: url(../assets/images/unsplash_k33qWPtEfrM.png) center/cover no-repeat;
+  background-position: unset;
   background-size: cover;
-  background-position: center;
   height: 628px;
   width: 1440px;
   position: relative;
+}
+#banner .overlay {
   padding-left: 126px;
   padding-top: 96px;
   padding-right: 551px;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(102, 102, 102, 0.5);
 }
-#index-main #banner #overlay-image {
+#banner .overlay #overlay-image {
   background-image: url(../assets/images/girl-with-notebooks.png);
   width: 978px;
   height: 598px;
@@ -298,7 +304,8 @@ footer #footer-bottom .footer-bar ul li {
   right: 51px;
   background-size: cover;
 }
-#index-main #banner #education-promo {
+#banner .overlay #education-promo {
+  z-index: 1;
   font-size: 68px;
   font-style: normal;
   font-weight: 500;
@@ -319,7 +326,7 @@ footer #footer-bottom .footer-bar ul li {
     line-height: 116%; /* 27.84px */
   }
 }
-#index-main #banner #education-promo-2 {
+#banner .overlay #education-promo-2 {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -332,7 +339,7 @@ footer #footer-bottom .footer-bar ul li {
     display: none;
   }
 }
-#index-main #banner #education-promo-3 {
+#index-main #banner .overlay #education-promo-3 {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -345,7 +352,7 @@ footer #footer-bottom .footer-bar ul li {
     display: none;
   }
 }
-#index-main #banner #search-container {
+#index-main #banner .overlay #search-container {
   display: flex;
   width: 716px;
   height: 68px;
@@ -357,7 +364,7 @@ footer #footer-bottom .footer-bar ul li {
   justify-content: space-between;
   margin-top: 64px;
 }
-#index-main #banner #search-container .course a {
+#index-main #banner .overlay #search-container .course a {
   margin-right: 8px;
 }
 @media (min-width: 390px) and (max-width: 822px) {
@@ -365,7 +372,7 @@ footer #footer-bottom .footer-bar ul li {
     display: none;
   }
 }
-#index-main #banner #search-container input {
+#index-main #banner .overlay #search-container input {
   width: 428px;
   height: 24px;
   border-style: none;
@@ -380,7 +387,7 @@ footer #footer-bottom .footer-bar ul li {
     left: 10px;
   }
 }
-#index-main #banner #search-container #circle {
+#index-main #banner .overlay #search-container #circle {
   width: 52px;
   height: 52px;
   background-color: #D70101;
@@ -390,7 +397,7 @@ footer #footer-bottom .footer-bar ul li {
   padding-top: 15px;
   padding-bottom: 13px;
 }
-#index-main #banner #search-container #circle .fa-magnifying-glass {
+#index-main #banner .overlay #search-container #circle .fa-magnifying-glass {
   width: 30px;
   height: 30px;
   color: white;
@@ -441,124 +448,40 @@ footer #footer-bottom .footer-bar ul li {
   height: 144px;
   margin-bottom: 40px;
 }
-#index-main #cards .title-container h1 {
-  color: #D70101;
-  font-size: 40px;
+#cards .title-container #overlay-image {
+  background-image: url(../assets/images/girl-with-notebooks.png);
+  width: 978px;
+  height: 598px;
+  position: absolute;
+  top: 30px;
+  bottom: 0;
+  left: 411px;
+  right: 51px;
+  background-size: cover;
+}
+#cards .title-container #education-promo {
+  font-size: 68px;
   font-style: normal;
-  font-weight: 600;
-  line-height: 150%;
-  flex-shrink: 0;
-}
-#index-main #cards .title-container .content {
-  height: 40px;
-}
-#index-main #cards .title-container .category-container {
-  display: flex;
-  flex-direction: row;
-  gap: 14px;
-  border-bottom: 2px solid #E0E0E0;
-}
-#index-main #cards .title-container .category-container .category-1 {
-  color: #1C1C1C;
-  padding: 0px 24px 16px 24px;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%;
-  border-bottom: 4px solid #D70101;
-}
-#index-main #cards .title-container .category-container .category-2 {
-  color: #A8A8A8;
-  padding: 0px 24px 16px 24px;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%;
-}
-#index-main #cards #card {
-  display: flex;
-  flex-direction: column;
-  width: 376px;
-  height: 426px;
-  border-radius: 16px;
-  border-right: 1px solid #E0E0E0;
-  border-bottom: 1px solid #E0E0E0;
-  border-left: 1px solid #E0E0E0;
-  border-top-style: none;
-  border: 1px solid #e0dfdf;
-  box-shadow: 0 8px 16px #f0eded;
-}
-#index-main #cards #card img {
-  width: 376px;
-  height: 212px;
-  border-radius: 0 0 -16px -16px;
-}
-#index-main #cards #card .image-2 {
-  width: 376px;
-  height: 212px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 16px 16px 0 0;
-}
-#index-main #cards #card .information-card {
-  padding: 24px 20px;
-  box-sizing: border-box;
-}
-#index-main #cards #card .information-card .course-name {
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 130%;
-  margin-bottom: 20px;
-}
-#index-main #cards #card .information-card .course-information {
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 150%;
-  color: #7C7C7C;
-  margin-bottom: 24px;
+  font-weight: 500;
+  line-height: 116%;
+  width: 763px;
+  color: white;
 }
 @media (min-width: 390px) and (max-width: 822px) {
-  #index-main #cards {
-    margin-top: 30px;
-    margin-left: 16px;
-    margin-right: 16px;
-  }
-}
-@media (min-width: 390px) and (max-width: 822px) {
-  #index-main h1 {
-    display: flex;
-    width: 358px;
-    height: 54px;
-    flex-direction: column;
-    justify-content: center;
-    color: #D70101;
-    text-align: center;
-    font-size: 32px;
+  #cards .title-container #education-promo {
+    position: absolute;
+    left: 15px;
+    top: 34px;
+    width: 192px;
+    color: var(--Neutral-20, #F9F9F9);
+    font-size: 24px;
     font-style: normal;
-    font-weight: 700;
-    line-height: 150%;
+    font-weight: 500;
+    line-height: 116%; /* 27.84px */
   }
 }
-@media (min-width: 390px) and (max-width: 822px) {
-  #index-main .category-container {
-    display: none;
-  }
-}
-@media (min-width: 390px) and (max-width: 822px) {
-  #index-main .title-container {
-    width: 358px;
-    height: 54px;
-    margin-bottom: 12px;
-  }
-}
-@media (min-width: 390px) and (max-width: 822px) {
-  #index-main .content {
-    height: 0;
-  }
-}
-#index-main .more-courses {
+
+.more-courses {
   border-radius: 32px;
   border: 1px solid #D70101;
   font-size: 16px;
@@ -573,20 +496,21 @@ footer #footer-bottom .footer-bar ul li {
   padding-right: 24px;
   margin: 54px 631px 91px 631px;
 }
-#index-main #graduates-section {
+
+#graduates-section {
   background: #F7F7F7;
   width: 1440px;
   height: 750px;
   position: relative;
 }
-#index-main #graduates-section #graduates-1 {
+#graduates-section #graduates-1 {
   width: 479px;
   height: 319px;
   padding: 9px 103px 62px 128px;
   margin: 76px 282px 355px 679px;
   position: absolute;
 }
-#index-main #graduates-section #graduates-1 img {
+#graduates-section #graduates-1 img {
   width: 248px;
   height: 248px;
   border-radius: 203px;
@@ -596,14 +520,14 @@ footer #footer-bottom .footer-bar ul li {
      object-fit: cover;
   box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.25);
 }
-#index-main #graduates-section #graduates-2 {
+#graduates-section #graduates-2 {
   width: 347px;
   height: 463px;
   position: absolute;
   padding: 113px 65px 153px 85px;
   margin: 23px 61px 264px 1032px;
 }
-#index-main #graduates-section #graduates-2 img {
+#graduates-section #graduates-2 img {
   border-radius: 100%;
   width: 197px;
   height: 197px;
@@ -614,55 +538,424 @@ footer #footer-bottom .footer-bar ul li {
   -o-object-fit: cover;
      object-fit: cover;
 }
-#index-main #graduates-section #graduates-3 {
+#graduates-section #graduates-3 {
   width: 466px;
   height: 622px;
   position: absolute;
   padding: 103px 57px 166px 58px;
   margin: 203px 538px 0 436px;
 }
-#index-main #graduates-section #graduates-3 img {
+#graduates-section #graduates-3 .graduates3-container {
+  z-index: 1;
+  position: relative;
   border-radius: 100%;
   width: 351px;
   height: 351px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 222px;
+  overflow: hidden;
   border: 3px solid #FFF;
   background: #FFF;
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
 }
-#index-main #graduates-section #graduates-4 {
+#graduates-section #graduates-3 .graduates3-container img {
+  position: absolute;
+  top: -97px;
+  left: -45px;
+  width: 130%;
+}
+#graduates-section #graduates-4 {
   width: 621px;
   height: 414px;
   position: absolute;
   padding: 13px 170px 97px 147px;
   margin: 349px 48px 13px 771px;
 }
-#index-main #graduates-section #graduates-4 img {
+#graduates-section #graduates-4 .graduates4-container {
+  z-index: 1;
+  position: relative;
   border-radius: 100%;
   width: 304px;
   height: 304px;
-  border-radius: 214px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 222px;
+  overflow: hidden;
   border: 3px solid #FFF;
   background: #FFF;
   box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
-  -o-object-fit: cover;
-     object-fit: cover;
 }
-#index-main #graduates-section .graduates-info {
+#graduates-section #graduates-4 .graduates4-container img {
+  position: absolute;
+  top: -20px;
+  left: -140px;
+  width: 200%;
+}
+#graduates-section .graduates-info {
   position: relative;
   left: 126px;
   top: 100px;
 }
-#index-main #graduates-section .graduates-info .p-1 {
+#graduates-section .graduates-info .p-1 {
   font-size: 52px;
   font-style: normal;
   font-weight: 600;
   line-height: 110%;
   color: #D70101;
 }
-#index-main #graduates-section .graduates-info .p-2 {
+#graduates-section .graduates-info .p-2 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  color: #E0E0E0;
+  margin-top: 24px;
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section .graduates-info #education-promo-2 {
+    display: none;
+  }
+}
+#graduates-section .graduates-info #education-promo-3 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: #E0E0E0;
+  margin-top: 8px;
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section .graduates-info #education-promo-3 {
+    display: none;
+  }
+}
+#graduates-section .graduates-info #search-container {
+  display: flex;
+  width: 716px;
+  height: 68px;
+  padding: 8px 8px 8px 24px;
+  align-items: center;
+  border-radius: 100px;
+  background-color: #FFF;
+  gap: 48px;
+  justify-content: space-between;
+  margin-top: 64px;
+}
+#graduates-section .graduates-info #search-container .course a {
+  margin-right: 8px;
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section .graduates-info #search-container .course {
+    display: none;
+  }
+}
+#graduates-section .graduates-info #search-container input {
+  width: 428px;
+  height: 24px;
+  border-style: none;
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section .graduates-info #search-container input {
+    position: absolute;
+    left: 0;
+    width: -moz-max-content;
+    width: max-content;
+    height: 24px;
+    left: 10px;
+  }
+}
+#graduates-section .graduates-info #search-container #circle {
+  width: 52px;
+  height: 52px;
+  background-color: #D70101;
+  border-radius: 50%;
+  padding-left: 17px;
+  padding-right: 14px;
+  padding-top: 15px;
+  padding-bottom: 13px;
+}
+#graduates-section .graduates-info #search-container #circle .fa-magnifying-glass {
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section .graduates-info #search-container #circle .fa-magnifying-glass {
+    width: 10.37px;
+    height: 10.37px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 8px;
+    right: 12px;
+  }
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section .graduates-info #search-container #circle {
+    position: absolute;
+    right: 3.3px;
+    width: 21.57px;
+    height: 21.57px;
+  }
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section .graduates-info #search-container {
+    margin: 0;
+    width: 206px;
+    height: 32px;
+    position: absolute;
+    left: 16px;
+    top: 130px;
+  }
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section #banner {
+    width: 390px;
+    height: 198px;
+    flex-shrink: 0;
+    background-size: cover;
+  }
+}
+#graduates-section #cards {
+  margin-top: 100px;
+  margin-left: 126px;
+  margin-right: 126px;
+}
+#graduates-section #cards .title-container {
+  width: 1188px;
+  height: 144px;
+  margin-bottom: 40px;
+}
+#graduates-section #cards .title-container h1 {
+  color: #D70101;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  flex-shrink: 0;
+}
+#graduates-section #cards .title-container .content {
+  height: 40px;
+}
+#graduates-section #cards .title-container .category-container {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
+  border-bottom: 2px solid #E0E0E0;
+}
+#graduates-section #cards .title-container .category-container .category-1 {
+  color: #1C1C1C;
+  padding: 0px 24px 16px 24px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  border-bottom: 4px solid #D70101;
+}
+#graduates-section #cards .title-container .category-container .category-2 {
+  color: #A8A8A8;
+  padding: 0px 24px 16px 24px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+#graduates-section #cards #card {
+  display: flex;
+  flex-direction: column;
+  width: 376px;
+  height: 426px;
+  border-radius: 16px;
+  border-right: 1px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
+  border-left: 1px solid #E0E0E0;
+  border-top-style: none;
+  border: 1px solid #e0dfdf;
+  box-shadow: 0 8px 16px #f0eded;
+}
+#graduates-section #cards #card img {
+  width: 376px;
+  height: 212px;
+  border-radius: 0 0 -16px -16px;
+}
+#graduates-section #cards #card .image-2 {
+  width: 376px;
+  height: 212px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+#graduates-section #cards #card .information-card {
+  padding: 24px 20px;
+  box-sizing: border-box;
+}
+#graduates-section #cards #card .information-card .course-name {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 130%;
+  margin-bottom: 20px;
+}
+#graduates-section #cards #card .information-card .course-information {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: #7C7C7C;
+  margin-bottom: 24px;
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section #cards {
+    margin-top: 30px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section h1 {
+    display: flex;
+    width: 358px;
+    height: 54px;
+    flex-direction: column;
+    justify-content: center;
+    color: #D70101;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+  }
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section .category-container {
+    display: none;
+  }
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section .title-container {
+    width: 358px;
+    height: 54px;
+    margin-bottom: 12px;
+  }
+}
+@media (min-width: 390px) and (max-width: 822px) {
+  #graduates-section .content {
+    height: 0;
+  }
+}
+#graduates-section .more-courses {
+  border-radius: 32px;
+  border: 1px solid #D70101;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  width: 185px;
+  height: 52px;
+  color: #D70101;
+  background-color: transparent;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin: 54px 631px 91px 631px;
+}
+#graduates-section #graduates-section {
+  background: #F7F7F7;
+  width: 1440px;
+  height: 750px;
+  position: relative;
+}
+#graduates-section #graduates-section #graduates-1 {
+  width: 479px;
+  height: 319px;
+  padding: 9px 103px 62px 128px;
+  margin: 76px 282px 355px 679px;
+  position: absolute;
+}
+#graduates-section #graduates-section #graduates-1 img {
+  width: 248px;
+  height: 248px;
+  border-radius: 203px;
+  border: 3px solid #FFF;
+  background: #FFF;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.25);
+}
+#graduates-section #graduates-section #graduates-2 {
+  width: 347px;
+  height: 463px;
+  position: absolute;
+  padding: 113px 65px 153px 85px;
+  margin: 23px 61px 264px 1032px;
+}
+#graduates-section #graduates-section #graduates-2 img {
+  border-radius: 100%;
+  width: 197px;
+  height: 197px;
+  border-radius: 194px;
+  border: 3px solid #FFF;
+  background: #FFF;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#graduates-section #graduates-section #graduates-3 {
+  width: 466px;
+  height: 622px;
+  position: absolute;
+  padding: 103px 57px 166px 58px;
+  margin: 203px 538px 0 436px;
+}
+#graduates-section #graduates-section #graduates-3 img {
+  border-radius: 100%;
+  width: 351px;
+  height: 351px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 222px;
+  overflow: hidden;
+  border: 3px solid #FFF;
+  background: #FFF;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
+}
+#graduates-section #graduates-section #graduates-4 {
+  width: 621px;
+  height: 414px;
+  position: absolute;
+  padding: 13px 170px 97px 147px;
+  margin: 349px 48px 13px 771px;
+}
+#graduates-section #graduates-section #graduates-4 img {
+  border-radius: 100%;
+  width: 304px;
+  height: 304px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 222px;
+  overflow: hidden;
+  border: 3px solid #FFF;
+  background: #FFF;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
+}
+#graduates-section #graduates-4 .graduates4-container img {
+  position: absolute;
+  top: -20px;
+  left: -140px;
+  width: 200%;
+}
+#graduates-section #graduates-section .graduates-info {
+  position: relative;
+  left: 126px;
+  top: 100px;
+}
+#graduates-section #graduates-section .graduates-info .p-1 {
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+  color: #D70101;
+}
+#graduates-section #graduates-section .graduates-info .p-2 {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -670,7 +963,7 @@ footer #footer-bottom .footer-bar ul li {
   color: #D70101;
   margin-top: 24px;
 }
-#index-main #graduates-section .graduates-info .more-graduates {
+#graduates-section #graduates-section .graduates-info .more-graduates {
   border-radius: 32px;
   border: 1px solid #D70101;
   text-align: center;
@@ -686,56 +979,56 @@ footer #footer-bottom .footer-bar ul li {
   padding-right: 24px;
   margin-top: 48px;
 }
-#index-main #graduates-section .ellipse-1 {
+#graduates-section #graduates-section .ellipse-1 {
   position: absolute;
   margin: 103px 619px 451px 625px;
 }
-#index-main #graduates-section .ellipse-2 {
+#graduates-section #graduates-section .ellipse-2 {
   position: absolute;
   margin: 26px 191px 1151px 626px;
 }
-#index-main #graduates-section .ellipse-3 {
+#graduates-section #graduates-section .ellipse-3 {
   position: absolute;
   margin: 367px 1233px 272px 96px;
 }
-#index-main #graduates-section .ellipse-4 {
+#graduates-section #graduates-section .ellipse-4 {
   position: absolute;
   margin: 580px 1261px 26px 17px;
 }
-#index-main #graduates-section .ellipse-5 {
+#graduates-section #graduates-section .ellipse-5 {
   position: absolute;
   margin: 432px 884px 70px 308px;
 }
-#index-main #graduates-section .ellipse-6 {
+#graduates-section #graduates-section .ellipse-6 {
   position: absolute;
   margin: 580px 426px 21px 865px;
 }
-#index-main #graduates-section .ellipse-7 {
+#graduates-section #graduates-section .ellipse-7 {
   position: absolute;
   margin: 360px 471px 321px 900px;
 }
-#index-main #graduates-section .ellipse-8 {
+#graduates-section #graduates-section .ellipse-8 {
   position: absolute;
   margin: 349px 94px 290px 1235px;
 }
-#index-main #graduates-section .ellipse-9 {
+#graduates-section #graduates-section .ellipse-9 {
   position: absolute;
   margin: 580px 39px 40px 1271px;
 }
-#index-main #graduates-section .ellipse-10 {
+#graduates-section #graduates-section .ellipse-10 {
   position: absolute;
   margin: 286px 306px 407px 1077px;
 }
-#index-main #graduates-section .ellipse-11 {
+#graduates-section #graduates-section .ellipse-11 {
   position: absolute;
   margin: 243px 943px 438px 428px;
 }
-#index-main #course-selection-section {
+#graduates-section #course-selection-section {
   width: 1140px;
   height: 560px;
   padding-top: 160px;
 }
-#index-main #course-selection-section #course-selection-message {
+#graduates-section #course-selection-section #course-selection-message {
   color: #000;
   text-align: center;
   font-size: 52px;
@@ -747,7 +1040,7 @@ footer #footer-bottom .footer-bar ul li {
   margin-right: 227px;
   margin-bottom: 32px;
 }
-#index-main #course-selection-section #course-selection-message-2 {
+#graduates-section #course-selection-section #course-selection-message-2 {
   color: #000;
   text-align: center;
   font-size: 24px;
@@ -759,7 +1052,7 @@ footer #footer-bottom .footer-bar ul li {
   width: 1188px;
   margin-bottom: 66px;
 }
-#index-main #course-selection-section #contact-us-button-2 {
+#graduates-section #course-selection-section #contact-us-button-2 {
   width: 178px;
   height: 52px;
   padding: 10px 24px;
@@ -774,11 +1067,11 @@ footer #footer-bottom .footer-bar ul li {
   font-weight: 600;
   line-height: 24px;
 }
-#index-main #students-opinion-section {
+#graduates-section #students-opinion-section {
   height: 778px;
   background: #D70202;
 }
-#index-main #students-opinion-section #what-our-student-say {
+#graduates-section #students-opinion-section #what-our-student-say {
   color: #FFF;
   text-align: center;
   font-size: 52px;
@@ -786,43 +1079,43 @@ footer #footer-bottom .footer-bar ul li {
   font-weight: 500;
   line-height: 110%;
 }
-#index-main #students-opinion-section .student-opinion {
+#graduates-section #students-opinion-section .student-opinion {
   width: 580px;
   padding: 24px;
   background-color: #FFF;
   border-radius: 16px;
   box-sizing: border-box;
 }
-#index-main #students-opinion-section .student-opinion .student-profile {
+#graduates-section #students-opinion-section .student-opinion .student-profile {
   display: flex;
   flex-direction: row;
   gap: 8px;
 }
-#index-main #students-opinion-section .student-opinion .student-profile .profile-picture img {
+#graduates-section #students-opinion-section .student-opinion .student-profile .profile-picture img {
   border-radius: 50%;
   width: 48px;
   height: 48px;
 }
-#index-main #students-opinion-section .student-opinion .student-profile .student-info {
+#graduates-section #students-opinion-section .student-opinion .student-profile .student-info {
   display: flex;
   flex-direction: row;
   gap: 285px;
 }
-#index-main #students-opinion-section .student-opinion .student-profile .student-info .student-name {
+#graduates-section #students-opinion-section .student-opinion .student-profile .student-info .student-name {
   color: var #252525;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
 }
-#index-main #students-opinion-section .student-opinion .student-profile .student-info .student-occupation {
+#graduates-section #students-opinion-section .student-opinion .student-profile .student-info .student-occupation {
   color: #7C7C7C;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 155%;
 }
-#index-main #students-opinion-section .student-opinion .student-opinions {
+#graduates-section #students-opinion-section .student-opinion .student-opinions {
   color: #7C7C7C;
   font-size: 14px;
   font-style: normal;
@@ -830,22 +1123,22 @@ footer #footer-bottom .footer-bar ul li {
   line-height: 155%;
   margin-top: 16px;
 }
-#index-main #join-us-section {
+#graduates-section #join-us-section {
   height: 664px;
   display: flex;
 }
-#index-main #join-us-section .join-us-picture {
+#graduates-section #join-us-section .join-us-picture {
   margin-top: 128px;
   width: 612px;
   height: 536px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-#index-main #join-us-section .join-us-content {
+#graduates-section #join-us-section .join-us-content {
   margin-left: 126px;
   margin-top: 205px;
 }
-#index-main #join-us-section .join-us-content .career-opp {
+#graduates-section #join-us-section .join-us-content .career-opp {
   color: #D70101;
   font-size: 52px;
   font-style: normal;
@@ -853,7 +1146,7 @@ footer #footer-bottom .footer-bar ul li {
   line-height: 110%;
   margin-bottom: 36.37px;
 }
-#index-main #join-us-section .join-us-content .join-us-content-1 {
+#graduates-section #join-us-section .join-us-content .join-us-content-1 {
   color: rgba(0, 0, 0, 0.74);
   font-size: 36px;
   font-style: normal;
@@ -861,7 +1154,7 @@ footer #footer-bottom .footer-bar ul li {
   line-height: 110%;
   margin-bottom: 16px;
 }
-#index-main #join-us-section .join-us-content .join-us-content-2 {
+#graduates-section #join-us-section .join-us-content .join-us-content-2 {
   color: rgba(0, 0, 0, 0.66);
   font-size: 18px;
   font-style: normal;
@@ -870,7 +1163,7 @@ footer #footer-bottom .footer-bar ul li {
   width: 513px;
   margin-bottom: 40.47px;
 }
-#index-main #join-us-section .join-us-content .join-us-button {
+#graduates-section #join-us-section .join-us-content .join-us-button {
   color: #D70101;
   font-size: 14px;
   font-style: normal;
