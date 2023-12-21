@@ -1,6 +1,7 @@
 #mini-header{
     display: none;
-    position: fixed;
+    z-index: 1;
+    position: sticky;
     padding: 0 16px ;
     align-items: flex-start;
     background: #FFF;
