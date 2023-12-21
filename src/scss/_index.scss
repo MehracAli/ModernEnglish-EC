@@ -6,106 +6,115 @@
     height: 628px; 
     width: 1440px;
     position: relative;
-    padding-left: 126px;
-    padding-top: 96px;
-    padding-right: 551px;
-
-
-
-
-    #overlay-image {
-        background-image: url(../assets/images/girl-with-notebooks.png);
-        width: 978px;
-        height: 598px;
-
+    
+    .overlay{
+        padding-left: 126px;
+        padding-top: 96px;
+        padding-right: 551px;
+        z-index: 0;
         position: absolute;
-        top: 30px;
-        bottom: 0;
-       
-        left: 411px;
-        right: 51px;
-        background-size: cover;
-        
-
-
-      
-
-
-    }
-    #education-promo {
-        font-size: 68px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 116%;
-        width: 763px;
-        color: white;
-        
-    }
-    #education-promo-2 {
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 130%;
-        color: #E0E0E0;
-        margin-top: 24px;
-       
-
-    }
-    #education-promo-3 {
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 150%; 
-        color: #E0E0E0;
-        margin-top: 8px;
-       
-
-    }
-    #search-container {
-        display: flex;
-        width: 716px;
-        height: 68px;
-        padding: 8px 8px 8px 24px;
-        align-items: center;
-        border-radius: 100px;
-        background-color: #FFF;
-        gap: 48px;
-        justify-content: space-between;
-        margin-top: 64px;
-        a {
-            margin-right: 8px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(102, 102, 102, 0.50);
+        #overlay-image {
+            background-image: url(../assets/images/girl-with-notebooks.png);
+            width: 978px;
+            height: 598px;
+    
+            position: absolute;
+            top: 30px;
+            bottom: 0;
+           
+            left: 411px;
+            right: 51px;
+            background-size: cover;
+            
+    
+    
+          
+    
+    
         }
-
-        input {
-            width: 428px;
-            height: 24px;
-            border-style: none;
+        #education-promo {
+            z-index: 1;
+            font-size: 68px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 116%;
+            width: 763px;
+            color: white;
+            
         }
-        #circle {
-            width: 52px;
-            height: 52px;
-            background-color: #D70101;
-            border-radius: 50%;
-            padding-left: 17px;
-            padding-right: 14px;
-            padding-top: 15px;
-            padding-bottom: 13px;
-
-
-        
-            .fa-magnifying-glass {
-                
-                width: 30px;
-                height: 30px;
-                color: white;
-               
-              
-
-
+        #education-promo-2 {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+            color: #E0E0E0;
+            margin-top: 24px;
+           
+    
+        }
+        #education-promo-3 {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; 
+            color: #E0E0E0;
+            margin-top: 8px;
+           
+    
+        }
+        #search-container {
+            display: flex;
+            width: 716px;
+            height: 68px;
+            padding: 8px 8px 8px 24px;
+            align-items: center;
+            border-radius: 100px;
+            background-color: #FFF;
+            gap: 48px;
+            justify-content: space-between;
+            margin-top: 64px;
+            a {
+                margin-right: 8px;
             }
+    
+            input {
+                width: 428px;
+                height: 24px;
+                border-style: none;
+            }
+            #circle {
+                width: 52px;
+                height: 52px;
+                background-color: #D70101;
+                border-radius: 50%;
+                padding-left: 17px;
+                padding-right: 14px;
+                padding-top: 15px;
+                padding-bottom: 13px;
+    
+    
+            
+                .fa-magnifying-glass {
+                    
+                    width: 30px;
+                    height: 30px;
+                    color: white;
+                   
+                  
+    
+    
+                }
+            }
+    
         }
-
     }
+
+
 
 }
 
@@ -350,26 +359,6 @@
         position: absolute;
         padding: 13px 170px 97px 147px;
         margin: 349px 48px 13px 771px;
-        // .graduates4-container{
-        //     z-index: 1;
-        //     border-radius: 100%;
-        //     width: 304px;
-        //     height: 304px;
-        //     object-fit: cover;
-        //     border-radius: 214px;
-        //     overflow: hidden;
-        //     border: 3px solid #FFF;
-
-        //     background: #FFF;
-
-        //     box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.25);
-        //     img {
-        //         position: absolute;
-        //         top: -97px;
-        //         left: -45px;
-        //         width: 130%;
-        //     }
-        // }
         .graduates4-container{
             z-index: 1;
             position: relative;
